@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+:root {
     --co1: #4C5FD5;
     --co2: #dadbf1;
     --co3: #0a0909;
@@ -10,47 +10,71 @@
 
     --font_padrao: "Roboto", Arial, sans-serif;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: var(--font_padrao);
 }
 
-header{
+header {
     background-color: var(--co2);
     height: 300px;
 }
 
-div#topo{
-    margin: 30px;
+header h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3.5em;
+    font-weight: normal;
 }
 
-nav{
+input#busca {
+    position: absolute;
+    margin-top: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+
+p#cabeçalho {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 1.2em;
+}
+
+nav {
     background-color: var(--co3);
     color: var(--co4);
 }
 
-div#bt{
-    display: block;
-    margin: auto;
+div#bt {
     text-align: right;
+    margin-top: -30px;
 }
 
-nav input{
+nav input {
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border-radius: 5px;
     color: var(--co2);
     border: 0px;
     margin-bottom: 10px;
 }
 
-input#entrar{
-    margin-right: 80px;
+input#entrar {
+    margin-left: 20px;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: var(--co1);
+    border: 1px solid var(--co1);
 }
 
-input#submit{
+input#submit {
     background-color: #111111;
     border: 1px solid #fff;
     padding-left: 20px;
