@@ -25,7 +25,7 @@ header {
 header h1 {
     text-align: center;
     margin-top: 100px;
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: normal;
 }
 
@@ -103,8 +103,8 @@ p.image-wrapper::before{
     margin-right: 10px;
 }
 
-p.image::before{
-    content: url('imagens/dollar-regular-24.png');
+p.im::before{
+    content: url('imagens/mouse-alt-solid-24.png');
     display: inline-block;
     width: 24px;
     height: auto;
