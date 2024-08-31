@@ -1,113 +1,47 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
+:root{
     --co1: #4C5FD5;
     --co2: #dadbf1;
-    --co3: #0a0909;
-    --co4: #f8f8f8;
+    --co3: #000;
+    --co4: #fff;
 
-    --font_padrao: "Roboto", Arial, sans-serif;
+    --font-padrao: "Open Sans", "Roboto", Arial, Sans-serif;
+    --padding-padrao: 10px;
 }
 
-* {
+*{
     margin: 0px;
     padding: 0px;
-    font-family: var(--font_padrao);
+    font-family: var(--font-padrao);
 }
 
-header {
-    background-color: var(--co2);
-    height: 500px;
-}
 
-header h1 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 4.5em;
-    font-weight: normal;
-}
-
-input#busca {
-    position: absolute;
-    margin-top: 50px;
+div#search{
+    position: relative;
+    width: 800px;
+    min-width: 300px;
+    margin: auto;
     height: 60px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 750px;
+    min-height: 30px;
+}
+input#busca{
+    width: 100%;
+    height: 100%;
+    text-indent: 20px;
+    font-size: 1.2em;
+}
+label#busc{
+    position: absolute;
+    left: 0%;
+    color: #aaa;
     font-size: 1.2em;
     text-indent: 20px;
-    border: 0.5px solid black;
+    margin-top: 15px;
 }
-
-p#cabeçalho {
-    padding-top: 20px;
-    padding-left: 50px;
-    font-size: 1.5em;
-}
-
-nav {
-    background-color: var(--co3);
-    color: var(--co4);
-}
-
-div#bt {
-    text-align: right;
-    margin-top: -30px;
-}
-
-nav input {
-    padding: 10px;
-    font-size: 1.4em;
-    border-radius: 5px;
-    color: var(--co2);
-    border: 0px;
-    margin-bottom: 10px;
-}
-
-input#entrar {
-    margin-left: 20px;
-    margin-right: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: var(--co1);
-    border: 1px solid var(--co1);
-}
-
-input#submit {
-    background-color: #111111;
-    border: 1px solid #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-main{
-    columns: 2;
-    padding: 10px;
-    line-height: 40px;
-    font-size: 1.5em;
-    margin-top: 80px;
-}
-
-main div{
-    margin: 80px;
-    text-align: justify;
-}
-p.image-wrapper::before{
-    content: url('imagens/dollar-regular-24.png');
+img#bus{
     display: inline-block;
-    width: 24px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-p.im::before{
-    content: url('imagens/mouse-alt-solid-24.png');
-    display: inline-block;
-    width: 24px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 10px;
+    margin: auto;
 }
